@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rl"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="MainActivity">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="360sp"
+        android:layout_height="250sp"
+        android:layout_marginTop="30sp"
+        android:id="@+id/lineChart"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <TextView
+        android:id="@+id/xValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineChart"
+        android:layout_marginTop="30sp"
+        android:text="x value" />
+
+    <TextView
+        android:id="@+id/yValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xValue"
+        android:layout_marginTop="30sp"
+        android:text="y value" />
+
+    <TextView
+        android:id="@+id/zValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yValue"
+        android:layout_marginTop="30sp"
+        android:text="z value" />
+
+</RelativeLayout>
